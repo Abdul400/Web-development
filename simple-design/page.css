@@ -1,0 +1,377 @@
+
+@import url('https://fonts.google.com/specimen/Red+Hat+Display');
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url("/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-color:hsl(225, 100%, 94%);
+    height: 100%;
+    background-attachment: fixed;
+    background-position:center center;
+    background-size:cover;
+}
+/*.background{
+    background-image: url("/simple-design/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    }
+*/
+
+p {
+    font-size: 12px;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%)
+}
+
+h3 {
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    font-size: 13px;
+}
+h5{
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+    font-size: 12px; 
+    margin-top: 15px;
+}
+
+#small {
+    font-weight: 400;
+}
+/*
+section {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+    height: 100vh;
+}
+
+#wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
+section.sec2{
+    width: 100%;
+    height: 50vh;
+    background: hsl(225, 100%, 94%);
+    z-index: -1;
+}
+*/
+.boxed-content{
+    border-radius: 25px;
+    box-sizing: border-box;
+    width: 20%;
+    height: 60%;
+    position: fixed;
+    top: 25%;
+    left: 40%;
+    margin: auto;
+    box-shadow: 0 2px 30px 1px rgba(48, 38, 109, 0.2); 
+    overflow: hidden; 
+    background: white;
+}
+.content {
+    text-align: center;
+    font-family:'Red Hat Display', sans-serif;
+    
+
+}
+#img1{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+.plan-box{
+    height: 60px;
+    margin-left:50px;
+    margin-right: 50px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background: hsl(225, 100%, 98%);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+#music {
+    float: left;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 35px;
+}
+#change {
+    position: relative;
+    left: 70px;
+    top: -40px;
+    color:  hsl(245, 75%, 52%);
+    font-size: small;
+}
+
+.payment {
+    border: 2px solid blue;
+    border-radius: 10px;
+    z-index: 1;
+    box-shadow:  0px 10px 8px rgba(171, 175, 228, 0.8);
+    margin-top: 10px;
+    margin-left:50px;
+    margin-right: 50px;
+    height: 40px;
+    text-align: center;
+    background-color: hsl(245, 75%, 52%);
+    
+}
+
+#proceed {
+    z-index: 2;
+    color: white;
+    position: relative;
+    top: 2px;
+    font-weight: 700;
+}
+#cancel {
+    position: relative;
+    top: 5px;
+    left: 120px;
+    color: hsl(223, 47%, 23%);
+    font-weight: 800;
+    z-index: 2;
+}
+a:link {
+    text-decoration: none;
+}
+a:hover {
+    cursor: pointer;
+}
+.payment:hover{
+    cursor: pointer;
+}
+#cancel:hover{
+    cursor: pointer;
+}
+#cancel:hover{
+    cursor: pointer;
+}
+@media only screen and (max-width: 1200px){
+    /*Tablets [601px -> 1200px]*/
+    .boxed-content{
+        border-radius: 25px;
+        box-sizing: border-box;
+        width: 35%;
+        height: 60%;
+        position: fixed;
+        top: 25%;
+        left: 32%;
+        margin: auto;
+        box-shadow: 0 2px 30px 1px rgba(48, 38, 109, 0.2); 
+        overflow: hidden; 
+        background: white;
+    }
+    .plan-box{
+        height: 70px;
+        margin-left:50px;
+        margin-right: 50px;
+        border-radius: 10px;
+        background: hsl(225, 100%, 98%);
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+    #music {
+        float: left;
+        position: absolute;
+        left: 5px;
+        top: 20px;
+        width: 40px;
+    }
+    #change {
+        position: relative;
+        left: 60px;
+        top: -40px;
+        color:  hsl(245, 75%, 52%);
+        font-size: 11px;
+    }
+    h5{
+        color: hsl(223, 47%, 23%);
+        position: relative;
+        margin-top: 0px;
+        font-weight: 700;
+        font-size: 11px; 
+        padding-top: 25px;
+    }
+    #cancel {
+        position: relative;
+        top: 5px;
+        left: 95px;
+        color: hsl(223, 47%, 23%);
+        font-weight: 800;
+        z-index: 2;
+    }
+    p{
+        font-size: small;
+    }
+    #proceed {
+        z-index: 2;
+        color: white;
+        position: relative;
+        top: -3px;
+        font-weight: 700;
+    }
+}
+@media only screen and (max-width: 600px){
+	/*Big smartphones [426px -> 600px]*/
+    .boxed-content{
+        border-radius: 25px;
+        box-sizing: border-box;
+        width: 60%;
+        height: 62%;
+        position: fixed;
+        top: 25%;
+        left: 20%;
+        margin: auto;
+        box-shadow: 0 2px 30px 1px rgba(48, 38, 109, 0.2); 
+        overflow: hidden; 
+        background: white;}
+        .plan-box{
+            height: 90px;
+            margin-left:50px;
+            margin-right: 50px;
+            border-radius: 10px;
+            background: hsl(225, 100%, 98%);
+            position: relative;
+            overflow: visible;
+            z-index: 1;
+        }
+        #music {
+            float: left;
+            position: absolute;
+            left: 5px;
+            top: 20px;
+            width: 35px;
+        }
+        #change {
+            position: relative;
+            left: 58px;
+            top: -40px;
+            color:  hsl(245, 75%, 52%);
+            font-size: 12px;
+        }
+        h5{
+            color: hsl(223, 47%, 23%);
+            font-weight: 700;
+            font-size: 11px; 
+            padding-top: 25px;
+        }
+        #cancel {
+            position: relative;
+            top: 1px;
+            left: 90px;
+            color: hsl(223, 47%, 23%);
+            font-weight: 800;
+            z-index: 2;
+        }
+}
+@media only screen and (max-width: 425px){
+	/*Small smartphones [325px -> 425px]*/
+    .boxed-content{
+        border-radius: 25px;
+        box-sizing: border-box;
+        width: 60%;
+        height: 50%;
+        position: fixed;
+        top: 25%;
+        left: 23%;
+        margin: auto;
+        box-shadow: 0 2px 30px 1px rgba(48, 38, 109, 0.2); 
+        overflow: hidden; 
+        background: white;
+    }
+    .plan-box{
+        height: 30px;
+        width: 140px;
+        margin-left:25px;
+        margin-right: 50px;
+        margin-top: 0;
+        border-radius: 10px;
+        background: hsl(225, 100%, 98%);
+        overflow:visible;
+        ;
+        z-index: 1;
+    }
+    #music {
+        float: left;
+        position: absolute;
+        left: 5px;
+        top: 3px;
+        width: 25px;
+    }
+    #change {
+        position: relative;
+        left: 43px;
+        top: -30px;
+        color:  hsl(245, 75%, 52%);
+        font-size: 8px;
+    }
+    h5{
+        color: hsl(223, 47%, 23%);
+        font-weight: 700;
+        font-size: 15px;
+        padding-top: 25px;
+    }
+    #cancel {
+        position: relative;
+        top: 5px;
+        left: 70px;
+        color: hsl(223, 47%, 23%);
+        font-weight: 800;
+        font-size: 10px;
+        z-index: 2;
+    }
+    p {
+        font-size: 10px;
+        font-weight: 500;
+        color: hsl(224, 23%, 55%)
+    }
+    
+    h3 {
+        font-weight: 900;
+        color: hsl(223, 47%, 23%);
+        font-size:11px;
+        position: relative;
+        margin-top: 3px;
+    }
+    h5{
+        color: hsl(223, 47%, 23%);
+        font-weight: 500;
+        font-size: 8px; 
+        padding-top: 8px;
+    }
+    .payment {
+        border: 2px solid blue;
+        border-radius: 10px;
+        z-index: 1;
+        box-shadow:  0px 10px 8px rgba(171, 175, 228, 0.8);
+        margin-top: 20px;
+        margin-left:30px;
+        margin-right: 50px;
+        height: 30px;
+        width: 130px;
+        text-align: center;
+        background-color: hsl(245, 75%, 52%);
+        }
+        #proceed {
+            z-index: 2;
+            color: white;
+            position: relative;
+            top: 3px;
+            font-size: 8px;
+            font-weight: 600;
+        }
+}
