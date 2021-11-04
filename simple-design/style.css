@@ -143,10 +143,10 @@ section.sec2{
     color: hsl(223, 47%, 23%);
     font-weight: 800;
     z-index: 2;
-}
+}/*
 a:link {
     text-decoration: none;
-}
+}*/
 a:hover {
     cursor: pointer;
 }
@@ -156,10 +156,12 @@ a:hover {
 }
 #cancel:hover{
     cursor: pointer;
+    text-decoration: none;
 }
-#cancel:hover{
-    cursor: pointer;
+a:hover {
+    text-decoration: none;
 }
+
 @media only screen and (max-width: 1200px){
     /*Tablets [601px -> 1200px]*/
     .boxed-content{
