@@ -1,0 +1,166 @@
+@import url(https://fonts.google.com/specimen/Inter);
+@import url(https://fonts.google.com/specimen/Lexend+Deca);
+
+body, html{
+    margin: 0;
+    padding: 0;
+    background-color: hsl(233, 47%, 7%);
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    border-radius: 5px;
+    flex-direction: row;
+    align-items: center;
+    background-color: hsl(244, 38%, 16%);
+    height: 65vh;
+    width: 80%;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    margin-top: 20vh;
+    flex-basis: 50%;
+
+}
+
+.written {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-left: 2vw ;
+}
+.pictorial {
+    display: flex;
+    background-image: url("/images/image-header-desktop1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    /*
+    background-image: url('images/image-header-desktop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;*/    
+}
+
+.content {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+}
+
+#head1{
+    font-size: 3vw;
+    font-family:'inter', sans-serif;
+    margin-bottom: 3vw;
+    font-weight: 700;
+    margin-top: 3vw;
+}
+#insights {
+    color: hsl(277, 64%, 61%);
+}
+#discover{
+    margin-top: 0.5vw;
+    margin-bottom: 40px;
+    font-family:'Lexend Deca','Red Hat Display', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 2.2vh;
+    line-height: 1.5;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    flex-shrink: 0.5;
+    font-size: 1vh;
+    margin:3vh 3vh 0 0;
+}
+
+#companies {
+    margin: 10px 10px 10px 0px;
+    font-family:'Lexend Deca','Red Hat Display', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 1.5vh;
+    margin-right: 30px;
+}
+
+#templates{
+    margin: 10px;
+    font-family:'inter', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 1.5vh;
+    margin-right: 30px;
+}
+
+#queries {
+    margin: 10px;
+    font-family:'inter', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 1.5vh;
+}
+.big{
+    color:white;
+    font-size: 2vh;
+    font-weight: 800;
+}
+
+@media only screen and (max-width: 535px), screen and (max-height:550px ) {
+    .pictorial{
+        background-image: url(/images/image-header-mobile1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+    }
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        height: 75vh;
+        margin-top: 13vh;
+    }
+    .written {
+        width: 100%;
+        text-align: center;
+    }
+    .content{
+        margin: 15px;
+    }
+    #head1 {
+        font-size: 2vh;
+        margin-top: 2px;
+    }
+    #discover {
+        margin-bottom: 5px;
+        font-size: 1.5vh;
+        white-space:wrap;
+    }
+    .bottom {
+        flex-direction: column;
+        margin-top: 0.5vh;
+    }
+    #companies{
+        font-size: 8px;
+        margin: 0.5vh;
+    }
+    #templates{
+        font-size: 8px;
+        margin: 0.5vh;
+    }
+    #queries{
+        font-size: 8px;
+        margin: 0.5vh;
+    }
+}
