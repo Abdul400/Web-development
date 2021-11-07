@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #1BA0AD;
+    background-image:   url(/images/bg-pattern-top.svg), 
+                        url(/images/bg-pattern-bottom.svg);
+    
+    background-position: -10vw -30vh, 
+                          55vw 45vh ;         ;
+
+    background-size: 55%, 55%;
+    background-repeat:  no-repeat,
+                        no-repeat;
+    display: flex;
+}
+
+p {
+    font-size: 1.6vh;
+    font-weight: 400;
+    font-family: 'kumbh Sans','Red Hat Display', sans-serif;
+}
+
+.last p {
+    font-size: 1.2vh;
+}
+
+h2 {
+    font-size: 2.3vh;
+    font-weight: 700;
+    font-family: 'kumbh Sans','Red Hat Display', sans-serif;
+}
+.container {
+    background-color: white;
+    height: 48vh;
+    width: 25vw;
+    border-radius: 15px;
+    position: relative;
+    top: 25vh;
+    margin: auto;
+    overflow: hidden;
+}
+
+.top {
+    width: 100%;
+    height: 37%;
+    position: relative;
+    overflow:visible;
+    background-image: url(/images/bg-pattern-card.svg);
+    text-align: center;
+}
+
+.bottom {
+    text-align: center;
+}
+#photo {
+    border-radius: 80px;
+    max-width: 40%;
+    height: auto;
+    z-index: 1;
+    position: relative;
+    top: 65%;
+}
+
+.first {
+    position: relative;
+    top:9vh;
+    white-space: nowrap;
+}
+
+.last {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    top: 14vh;
+}
+
+#age {
+    position: relative;
+    right: -9vh;
+    top: -2.4vh;
+    
+}
+
+@media only screen and (max-width: 1024px) {
+    
+    .container {
+        width: 45vw;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    
+    .container {
+        width: 90vw;
+    }
+}
+
+@media only screen and (max-height: 658px) {
+    
+    #photo {
+        width: 12vh;
+    }
+}
+/*
+@media only screen 
+  and (width: 1024px) 
+  and (height: 1366px) {
+    .container {
+        width: 80vw;
+    }
+  }
+/*
+@media only screen and (max-width: 1024px) {
+    
+    .container {
+        width: 50vw;
+    }
+} 
+ */
