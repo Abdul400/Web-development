@@ -43,6 +43,7 @@ h2 {
     top: 25vh;
     margin: auto;
     overflow: hidden;
+    box-shadow: 10px 10px 30px 10px rgba(0, 0, 0, 0.2);
 }
 
 .top {
