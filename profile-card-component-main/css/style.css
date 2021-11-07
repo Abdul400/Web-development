@@ -92,12 +92,35 @@ h2 {
     .container {
         width: 45vw;
     }
+
+    body {
+        background-position: -40vw -20vh, 
+                              55vw 40vh ;         ;
+
+        background-size: 80%, 80%;
+    }
+}
+
+@media only screen and (max-width: 250px) {
+    
+    body {
+        background-position: -35vw -10vh, 
+                             -35vw -10vh;         ;
+
+        background-size: 80%, 80%;
+    }
 }
 
 @media only screen and (max-width: 500px) {
     
     .container {
         width: 90vw;
+    }
+    body {
+        background-position: -35vw -10vh, 
+                              55vw 70vh ;         ;
+
+        background-size: 80%, 80%;
     }
 }
 
