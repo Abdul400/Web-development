@@ -84,6 +84,7 @@ h5{
 .written {
     position: relative;
     top: 10px;
+    width: 80%;
 }
 .content {
     height: 75%;
