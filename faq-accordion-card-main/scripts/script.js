@@ -179,6 +179,8 @@ btn5.addEventListener('click', function(event){
     }
 })
 
+window.addEventListener('resize', ()=> {document.location.reload(false);}) 
+
 function ChangeImg(){
     var   main =document.getElementById('container1'),
           body =document.getElementById('main'),
@@ -242,6 +244,7 @@ function ChangeImg(){
 
 //calling the function
 window.onload= ChangeImg();
+        
 
 /*
 //logic for changing background in mobile
