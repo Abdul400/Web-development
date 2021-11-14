@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+h1{
+    font-family: 'Spartan', sans-serif;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    margin-bottom: 0;
+    font-size: 4vh;
+    line-height: 4vh;
+}
+
+p {
+    font-family: 'Spartan', sans-serif;
+    font-size: 1.5vh;
+}
+
+#products-description {
+    color: hsl(303, 10%, 53%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 70%;
+}
+
+.top-section {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.products {
+    width: 38%;
+    overflow: hidden;
+    line-height: 120%;
+}
+.stars {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    right: 0;
+}
+.starbox {
+    background-color: hsl(300, 24%, 96%);
+    height: 18%;
+    width: 71%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.star-container {
+    width: 30%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#cn1 {
+    position: absolute;
+    left: 0;
+    bottom: 70%;
+
+}
+#cn2 {
+    position: absolute;
+    left: 15%;
+    bottom: 45%;
+}
+#cn3 {
+    position: absolute;
+    left: 29.3%;
+    bottom: 20%;
+}
+.star-rating {
+    width: 1vw;
+    margin-right: 0.5vh;
+}
+.par-container {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+}
+.rating{
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+}
+
+
+.bottom-section {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.testimony-cards {
+    background-color: hsl(300, 43%, 22%);
+    width: 31.5%;
+    height: 80%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+.container-all{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+    overflow: hidden;
+}
+.profile {
+    width: 100%;
+    min-height: 25%;
+    position: relative;
+}
+.profile-pic {
+    width: 4vh;
+    border-radius: 100%;
+    display:inline;
+    position: absolute;
+    left: 5%;
+}
+.name {
+    display: inline;
+    font-size: 1.2vh;
+    font-weight: 600;
+    position: absolute;
+    left: 30%;
+    color: hsl(300, 24%, 96%);
+}
+.buyer {
+    display: inline;
+    font-size: 1.2vh;
+    font-weight: 600;
+    position: absolute;
+    left: 30%;
+    top: 35%;
+    color: hsl(333, 80%, 67%);
+}
+.quote {
+    font-size: 1.4vh;
+    line-height: 150%;
+    color: hsl(300, 24%, 96%);
+}
+#tc1{
+    position: relative;
+}
+#tc2{
+    position: relative;
+    top: 2vh;
+}
+#tc3{
+    position: relative;
+    top: 4vh;
+}
+
+@media only screen and (max-width:730px) {
+    .rating {
+        font-size: 1.2vh;
+    }
+    .quote {
+        font-size: 1.1vh;
+    }
+    h1{
+        font-size:3vh ;
+    }
+    #products-description{
+        font-size: 1.3vh ;
+    }
+    .name {
+        font-size: 1vh;
+    }
+    .buyer{
+        font-size: 1vh;
+    }
+    .profile-pic{
+        width: 3vh ;
+    }
+}
+@media only screen and (max-width:680px) {
+    .star-container{
+        width: 40%;
+    }
+    .star-rating {
+        width: 1vw;
+    }
+}
+
+@media only screen and (max-width:535px) {
+    .rating {
+        font-size: 1.1vh;
+    }
+    .quote {
+        font-size: 1.1vh;
+    }
+    h1{
+        font-size:2.5vh ;
+    }
+    #products-description{
+        font-size: 1.2vh ;
+    }
+    .name {
+        font-size: 0.8vh;
+    }
+    .buyer{
+        font-size: 0.8vh;
+    }
+    .profile-pic{
+        width: 2.8vh ;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    html, body {
+        height:215vh ;
+    }
+    .container{
+        flex-direction: column;
+        min-height: 200vh;
+        width: 90%;
+        position: absolute;
+        top: 5vh;
+    }
+    .top-section {
+        flex-direction:column;
+        width: 100%;
+        height: 50%;
+    }
+    .bottom-section {
+        height: 50%;
+        margin-top: 3vh;
+    }
+    h1 {
+        font-size: 3vh;
+    }
+    .products {
+        width: 100%;
+        height: 35%;
+        text-align: center;
+    }
+    #products-description {
+        font-size: 1.8vh;
+    }
+    .stars {
+        height: 60%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        bottom: 0;
+    }
+    .starbox {
+        height: 30%;
+        flex-direction: column;
+    }
+    .star-container{
+        width: 100%;
+    }
+    .star-rating{
+        width: 6%;
+    }
+    .rating {
+        font-size: 1.5vh;
+    }
+    .par-container{
+        width: 100%;
+        justify-content: center;
+    }
+    #cn1{
+        width: 100%;
+        top: 0%;
+    }
+    #cn2{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 34%;
+    }
+    #cn3{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    .bottom-section {
+        flex-direction: column;
+        height: 50%;
+    }
+    .testimony-cards {
+        width: 100%;
+        height: 50%;
+    }
+    .name {
+        font-size: 1.2vh;
+    }
+    .buyer {
+        font-size: 1.2vh;
+    }
+    .profile-pic{
+        width: 6vh;
+    }
+    .quote{
+        font-size: 1.5vh;
+    }
+
+} 
+
+@media only screen and (max-width:250px){
+    .name {
+        font-size: 1vh;
+    }
+    .buyer {
+        font-size: 1.2vh;
+    }
+    .profile-pic{
+        width: 4.5vh;
+    }
+    .quote{
+        font-size: 1.3vh;
+    }
+}
+
+@media only screen and (max-width:180px){
+    h1 {
+        font-size: 2.2vh;
+    }
+    #products-description {
+        font-size: 1.3vh;
+    }
+    .name {
+        font-size: 1vh;
+    }
+    .buyer {
+        font-size: 1vh;
+    }
+    .profile-pic{
+        width: 3.5vh;
+    }
+    .quote{
+        font-size: 1.3vh;
+    }
+}
+@media only screen and (min-height:1024px) {
+    html, body {
+        height:215vh ;
+    }
+    .container{
+        flex-direction: column;
+        min-height: 200vh;
+        width: 90%;
+        position: absolute;
+        top: 5vh;
+    }
+    .top-section {
+        flex-direction:column;
+        width: 100%;
+        height: 50%;
+    }
+    .bottom-section {
+        height: 50%;
+        margin-top: 3vh;
+    }
+    h1 {
+        font-size: 5vh;
+        line-height: 6vh;
+    }
+    .products {
+        width: 100%;
+        height: 35%;
+        text-align: center;
+    }
+    #products-description {
+        font-size: 2.5vh;
+        line-height: 3vh;
+    }
+    .stars {
+        height: 60%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        bottom: 0;
+    }
+    .starbox {
+        height: 30%;
+        flex-direction: column;
+    }
+    .star-container{
+        width: 100%;
+    }
+    .star-rating{
+        width: 6%;
+    }
+    .rating {
+        font-size: 2vh;
+    }
+    .par-container{
+        width: 100%;
+        justify-content: center;
+    }
+    #cn1{
+        width: 100%;
+        top: 0%;
+    }
+    #cn2{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 34%;
+    }
+    #cn3{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    .bottom-section {
+        flex-direction: column;
+        height: 50%;
+    }
+    .testimony-cards {
+        width: 100%;
+        height: 50%;
+    }
+    .name {
+        font-size: 1.5vh;
+    }
+    .buyer {
+        font-size: 1.5vh;
+    }
+    .profile-pic{
+        width: 8vh;
+    }
+    .quote{
+        margin-top: 4vh;
+        font-size: 2vh;
+    }
+
+    
+}
