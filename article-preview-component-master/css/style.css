@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap');
+body, html, main {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(210, 46%, 95%);
+    z-index: 1;
+}
+main, html, body {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+h1 {
+    font-size: 2.5vh;
+    font-family: 'Manrope', sans-serif;
+    color: hsl(217, 19%, 35%);
+    z-index: 1;
+}
+p{
+    font-size: 1.6vh;
+    font-family: 'Manrope', sans-serif;
+    color: hsl(214, 17%, 51%);
+    font-weight: 400;
+    z-index: 1;
+}
+.container {
+    border-radius: 10px;
+    overflow:visible;
+    width: 55%;
+    height: 35%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    z-index: 1;
+    box-shadow: 10px 20px 20px hsl(212, 23%, 69%, 0.2);
+}
+.left-container {
+    width: 35%;
+    height:100%;
+    background-image: url('/images/drawers.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-clip:content-box;
+    z-index: 1;
+    border-radius: 10px 0 0 10px;
+    
+}
+.right-container {
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.contents-container {
+    width: 70%;
+    height: 80%;
+    overflow: hidden;
+    z-index: 1;
+}
+#content-paragraph {
+    font-size: 1.2vh;
+    font-weight: 500;
+}
+.profile {
+    position: absolute;
+    width: 84%;
+    height: 15%;
+    top: 24.3vh;
+    z-index: 1;
+}
+#pic {
+    width: 5vh;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 1;
+    margin-right: 1vh;
+}
+#name{
+    position: absolute;
+    left: 15%;
+    top: -1vh;
+    color: hsl(217, 19%, 35%);
+    font-weight: 600;
+    z-index: 1;
+}
+#date{
+    display: inline-block;
+    position: absolute;
+    left: 15%;
+    top: 1.8vh;
+    z-index: 1;
+    font-size: 1.2vh;
+}
+.bottom-right {
+    width: 50%;
+    height: 15%;
+    position: absolute;
+    bottom: 5vh;
+    right: 0;
+    z-index: 1;
+}
+.hidden {
+    display: none;
+    background-color: hsl(218, 17%, 69%);
+    position: absolute;
+    width: 98%;
+    height: 100%;
+    bottom: 8vh;
+    left: 28%;
+    z-index: 2;
+    border-radius: 5px;
+    animation-name: transition2;
+    animation-duration: .5s;
+}
+.visible {
+    display: block;
+    animation-name: transition1;
+    animation-duration: .3s;
+}
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid hsl(218, 17%, 69%);
+    position: relative;
+    top: 5vh;
+    left: 42%;
+    z-index: 2;
+}
+#share{
+    color: hsl(0, 0%, 0%);
+    position: absolute;
+    left: 10%;
+    top: -0.1vh;
+    z-index: 3;
+}
+#fb{
+    position: absolute;
+    left: 40%;
+    top: 1.6vh;
+    z-index: 3;
+    transition: all .5s ease-in-out;
+}
+#twitter{
+    position: absolute;
+    left: 55%;
+    top: 1.6vh;
+    z-index: 3;
+    transition: all .5s ease-in-out;
+}
+#pinterest{
+    position: absolute;
+    left: 70%;
+    top: 1.6vh;
+    z-index: 3;
+    transition: all .5s ease-in-out;
+}
+#share-btn {
+    position: absolute;
+    top: 14%;
+    left: 67%;
+    background-color: hsl(210, 46%, 95%);
+    height: 4vh;
+    width: 4vh;
+    border-radius: 100%;
+    cursor: pointer;
+}
+#share-button {
+    font-size: 2vh;
+    position: absolute;
+    left: 0.8vh;
+    top: 1vh;
+}
+a{
+    cursor: pointer;
+}
+
+a, a:hover, a:visited, a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+#fb:hover, #pinterest:hover, #twitter:hover {
+    transform: scale(150%);
+}
+
+@media only screen and (max-width:1030px) {
+    .container {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width:815px) {
+   h1 {
+       font-size: 2vh;
+   }
+   #share {
+       font-size: 1.5vh;
+       top: 0.1vh;
+       left: 0.9vh;
+   }
+}
+
+@media only screen and (max-width:683px) {
+    h1 {
+        font-size: 1.5vh;
+    }
+    #share-btn {
+        font-size: 2vh;
+    }
+    #fb {
+        font-size: 2vh;
+    }
+    #twitter{
+        font-size: 2vh
+    }
+    #pinterest{
+        font-size: 2vh
+    }
+    #share {
+        font-size: 1.2vh;
+        top: 0.5vh;
+    }
+    #name {
+        font-size: 1vh;
+        left: 20%;
+        top: .1vh;
+    }
+    #date {
+        font-size: 1vh ;
+        left: 20%;
+    }
+ }
+ 
+ @media only screen and (max-width:500px) {
+    #share-btn {
+        font-size: 2vh;
+    }
+    #fb {
+        font-size: 2vh;
+        left: 40%;
+    }
+    #twitter{
+        font-size: 2vh;
+        left: 60%;
+    }
+    #pinterest{
+        font-size: 2vh;
+        left: 80%;
+    }
+    #share {
+        font-size: 1.2vh;
+        left: 0.5vh;
+        top: 0.5vh;
+    }
+ }
+
+ @media only screen and (max-width:450px) {
+    .container {
+        flex-direction: column;
+        height: 80%;
+        width: 85%;
+     }
+     .left-container {
+        height: 35%;
+        width: 100%;
+        border-radius: 10px  10px 0 0 ;
+     }
+     .right-container {
+        height: 80%;
+        width: 100%;
+     }
+     .contents-container {
+        height: 90%;
+        width: 80%;
+     }
+     h1 {
+        font-size: 2.5vh;
+     }
+     #content-paragraph {
+        font-size: 1.8vh;
+     }
+     .profile {
+        position: absolute;
+        width: 78.5%;
+        top: 79%;
+     }
+     #name {
+        position: absolute;
+        font-size: 1.6vh;
+        top: -10%;
+        left: 28%;
+     }
+     #date{
+        font-size: 1.6vh;
+        left: 28%;
+     }
+     #pic {
+        width: 6vh;
+        left: 5%;
+     }
+     #share-btn {
+        top: 35%;
+        left: 55%;
+     }
+     .hidden {
+        width: 200%;
+        height: 140%;
+        left: -100%;
+        top: 24%;
+        border-radius: 0 0 10px 10px;
+        animation-name: transition;
+        animation-duration: .5s;
+     }
+     #share{
+        font-size: 1.8vh;
+        top: 3vh;
+        left: 5%;
+     }
+     #fb{
+        font-size: 3vh;
+        top: 4.5vh;
+        left: 35%;
+     }
+     #twitter{
+        font-size: 3vh;
+        top: 4.5vh;
+        left: 55%;
+
+     }
+     #pinterest {
+        font-size: 3vh;
+        top: 4.5vh;
+        left: 75%;
+     }
+ }
+ @media only screen and (max-width:280px) {
+     h1 {
+        font-size: 1.8vh;
+    }
+    #content-paragraph {
+        font-size: 5vw;
+    }
+    #pic{
+        width: 15vw;
+    }
+    #name {
+        font-size: 3vw;
+        left: 35%;
+    }
+    #date{
+        font-size: 3vw;
+        left: 35%;
+    }
+ }
+ @media only screen and (min-height:1024px) {
+     .container {
+        flex-direction: column;
+        height: 80%;
+        width: 85%;
+     }
+     .left-container {
+        height: 35%;
+        width: 100%;
+        border-radius: 10px  10px 0 0 ;
+     }
+     .right-container {
+        height: 80%;
+        width: 100%;
+     }
+     .contents-container {
+        height: 90%;
+        width: 80%;
+     }
+     h1 {
+        font-size: 2.5vh;
+     }
+     #content-paragraph {
+        font-size: 1.8vh;
+     }
+     .profile {
+        position: absolute;
+        width: 78.5%;
+        top: 79% ;
+     }
+     #name {
+        position: absolute;
+        font-size: 1.6vh;
+        top: -10%;
+        left: 28%;
+     }
+     #date{
+        font-size: 1.6vh;
+        left: 28%;
+     }
+     #pic {
+        width: 6vh;
+        left: 5%;
+     }
+     #share-btn {
+        top: 35%;
+        left: 55%;
+     }
+     .hidden {
+        width: 161%;
+        height: 109%;
+        left: -79%;
+        top: 24%;
+        border-radius: 0 0 10px 10px;
+     }
+     #share{
+        font-size: 1.8vh;
+        top: 1.5vh;
+     }
+     #fb{
+        font-size: 3vh;
+        top: 3vh;
+     }
+     #twitter{
+        font-size: 3vh;
+        top: 3vh;
+
+     }
+     #pinterest {
+        font-size: 3vh;
+        top: 3vh;
+     }
+ }
+
+ #toucharea {
+     display: none;
+     position: absolute;
+     z-index: 5;
+     width: 80%;
+     height: 63%;
+     top: 15%;
+ }
+
+ @keyframes transition {
+    0% {height: 0%;}
+    25% {height: 140%;}
+    50% {height: 110%;}
+    100% {height: 140%;}  
+ }
+
+ @keyframes transition1 {
+    0% {height: 0%;}
+    25% {height: 60%;}
+    50% {height: 80%;}
+    100% {height: 100%;}
+ }
+ @keyframes transition2 {
+    0% {height: 140%;}
+    25% {height: 0%;}
+    50% {height: 10%;}
+    100% {height: 0%;}
+ }
+ @keyframes transition3 {
+    0% {height: 0%;}
+    25% {height: 100%;}
+    50% {height: 110%;}
+    100% {height: 120%;}
+ }
