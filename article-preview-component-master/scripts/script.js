@@ -20,12 +20,21 @@ function getwidth () {
 
 //getting height of screen 
 function getheight () {
-    return window.innerHeight;//returns innerwidth of window
+    return window.innerHeight;//returns innerheight of window
+}
+
+var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+function addition () {
+    if (isMobile){
+        hiddenContent.style.height = '130%';
+    }
 }
 
 //running getwidth & getheight function on screen load
 window.onload = getwidth();
-window.onload =getheight;
+window.onload = getheight();
+window.onload = addition();
 
 //adding eventlistener to the window to check for resize. This is to allow it to be responsive
 window.addEventListener('resize', ()=> {
