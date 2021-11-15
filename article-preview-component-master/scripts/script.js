@@ -34,7 +34,6 @@ function addition () {
 //running getwidth & getheight function on screen load
 window.onload = getwidth();
 window.onload = getheight();
-window.onload = addition();
 
 //adding eventlistener to the window to check for resize. This is to allow it to be responsive
 window.addEventListener('resize', ()=> {
@@ -55,9 +54,9 @@ share.addEventListener('click', function(event){
             //touchArea.classList.add('visible')-- did not work for some reason.
             touchArea.style.display= 'block'; //adding toucharea for interaction 
             }
-        else if (getheight() > 1024 && hiddenContent.classList.contains('visible')) 
+        else if (getheight() >= 1024 && hiddenContent.classList.contains('visible')) 
             {
-                    touchArea.style.display= 'block'; //adding toucharea for interaction
+            touchArea.style.display= 'block'; //adding toucharea for interaction
             }
     }
     else if (hiddenContent.classList.contains('visible')) { // hide toggle for desktops
@@ -77,4 +76,8 @@ touchArea.addEventListener('click', ()=> {
 
 window.addEventListener('orientationchange', ()=> {
     window.location.reload();
+    if (getwidth () > getheight ()) 
+        {
+        addition()
+        };
 })
