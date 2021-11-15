@@ -362,6 +362,58 @@ a, a:hover, a:visited, a:active {
         left: 35%;
     }
  }
+ /*
+ @media only screen and (max-height:500px) {
+
+    h1 {
+        font-size: 2.5vh;
+     }
+     #content-paragraph {
+        font-size: 2vh;
+     }
+     #name {
+        font-size: 2.5vh;
+        top: -2vh;
+     }
+     #date {
+        font-size: 2.5vh;
+     }
+     #pic {
+        width: 8vh;
+     }
+     #share-button {
+        font-size: 4vh;
+     }
+     #share-btn {
+        height: 6vh;
+        width: 6vh;
+     }
+ }
+ @media only screen and (max-height:250px) {
+    h1 {
+       font-size: 5vh;
+    }
+    #content-paragraph {
+       font-size: 4vh;
+    }
+    #name {
+       font-size: 3.5vh;
+       top: -3vh;
+    }
+    #date {
+       font-size: 3.5vh;
+    }
+    #pic {
+       width: 10vh;
+    }
+    #share-button {
+       font-size: 5vh;
+    }
+    #share-btn {
+       height: 7vh;
+       width: 7vh;
+    }
+}*/
  @media only screen and (min-height:1024px) {
      .container {
         flex-direction: column;
@@ -382,10 +434,10 @@ a, a:hover, a:visited, a:active {
         width: 80%;
      }
      h1 {
-        font-size: 2.5vh;
+        font-size: 3vh;
      }
      #content-paragraph {
-        font-size: 1.8vh;
+        font-size: 2vh;
      }
      .profile {
         position: absolute;
@@ -394,45 +446,56 @@ a, a:hover, a:visited, a:active {
      }
      #name {
         position: absolute;
-        font-size: 1.6vh;
-        top: -10%;
+        font-size: 2vh;
+        top: -20%;
         left: 28%;
      }
      #date{
-        font-size: 1.6vh;
+        font-size: 2vh;
         left: 28%;
      }
      #pic {
-        width: 6vh;
+        width: 8vh;
         left: 5%;
      }
      #share-btn {
         top: 35%;
         left: 55%;
      }
+     #share-button {
+        font-size: 2.6vh;
+        left: 16%;
+        top: 15%;
+     }
      .hidden {
-        width: 161%;
-        height: 109%;
-        left: -79%;
+        width: 200%;
+        height: 135%;
+        left: -100%;
         top: 24%;
         border-radius: 0 0 10px 10px;
+        animation-name: transition;
+        animation-duration: .5s;
      }
      #share{
-        font-size: 1.8vh;
+        font-size: 2.5vh;
         top: 1.5vh;
+        left: 2vh;
      }
      #fb{
-        font-size: 3vh;
-        top: 3vh;
+        font-size: 4vh;
+        top: 3.5vh;
+        left: 20vh;
      }
      #twitter{
-        font-size: 3vh;
-        top: 3vh;
+        font-size: 4vh;
+        top: 3.5vh;
+        left: 30vh;
 
      }
      #pinterest {
-        font-size: 3vh;
-        top: 3vh;
+        font-size: 4vh;
+        top: 3.5vh;
+        left: 40vh;
      }
  }
 

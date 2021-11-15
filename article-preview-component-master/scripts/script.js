@@ -10,6 +10,7 @@
 //definition of variables
 let hiddenContent = document.getElementById('hide'),// selecting the hidden content
     touchArea = document.getElementById('toucharea'),//selecting the toucharea on mobile
+    myCont= document.getElementById('myCont'),//selecting the main container
     share = document.getElementById('share-btn');//selecting the share button
 
 //getting width of the screen to differentiate between mobile and desktop
@@ -17,13 +18,19 @@ function getwidth () {
     return window.innerWidth;//returns innerwidth of window
 }
 
-//runnin getwidth function on screen load
+//getting height of screen 
+function getheight () {
+    return window.innerHeight;//returns innerwidth of window
+}
+
+//running getwidth & getheight function on screen load
 window.onload = getwidth();
+window.onload =getheight;
 
 //adding eventlistener to the window to check for resize. This is to allow it to be responsive
 window.addEventListener('resize', ()=> {
     getwidth();
-    if (getwidth() < 450) // check if its a mobile screen (450px and below)
+   if (getwidth() < 450) // check if its a mobile screen (450px and below)
     { 
         touchArea.style.display = ('block');//adding block display to toucharea if condition is met
     }
@@ -39,10 +46,15 @@ share.addEventListener('click', function(event){
             //touchArea.classList.add('visible')-- did not work for some reason.
             touchArea.style.display= 'block'; //adding toucharea for interaction 
             }
+        else if (getheight() > 1024 && hiddenContent.classList.contains('visible')) 
+            {
+                    touchArea.style.display= 'block'; //adding toucharea for interaction
+            }
     }
     else if (hiddenContent.classList.contains('visible')) { // hide toggle for desktops
-        hiddenContent.classList.remove('visible');
+            hiddenContent.classList.remove('visible');
     }
+    
 })
 
 //adding event listener to the created toucharea
@@ -52,4 +64,8 @@ touchArea.addEventListener('click', ()=> {
         hiddenContent.classList.remove('visible'); // hiden content
         touchArea.style.display=('none'); //remove itself to allow for interaction with text
     }
+})
+
+window.addEventListener('orientationchange', ()=> {
+    window.location.reload();
 })
