@@ -26,14 +26,22 @@ function getheight () {
 var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
 function addition () {
-    if (isMobile){
+    'use strict'
+    if (isMobile===true && getwidth() > getheight()) 
+        {
+        console.log('test')
         hiddenContent.style.height = '130%';
+        }
+    else if (!isMobile) {
+        console.log('desktop')
     }
+        
 }
 
 //running getwidth & getheight function on screen load
 window.onload = getwidth();
 window.onload = getheight();
+window.onload = addition();
 
 //adding eventlistener to the window to check for resize. This is to allow it to be responsive
 window.addEventListener('resize', ()=> {
@@ -76,8 +84,4 @@ touchArea.addEventListener('click', ()=> {
 
 window.addEventListener('orientationchange', ()=> {
     window.location.reload();
-    if (getwidth () > getheight ()) 
-        {
-        addition()
-        };
 })
