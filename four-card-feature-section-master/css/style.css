@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+body, html, main {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width:100%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1, p, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+h1 {
+    font-size: 3vh;
+    font-weight: 600
+}
+h3 {
+    font-size: 2vh;
+    font-weight: 600;
+}
+p {
+    font-size: 1.5vh;
+    color: hsl(229, 6%, 66%);
+}
+#header1{
+    font-weight: 400;
+    color: hsl(229, 6%, 66%);
+}
+#header2{
+    font-weight: 600;
+    color:hsl(234, 12%, 34%)
+}
+.headers{
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+    width: 75%;
+    position: relative;
+}
+.flex-item {
+    box-shadow: 0px 18px 25px rgba(0, 85, 197, 0.2);
+    border-radius: 7px;
+    width: 31%;
+    height: 34%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inner-container {
+    width: 85%;
+    height: 85%;
+    position: relative;
+}
+#item1 {
+    position: absolute;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 24%;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    overflow: hidden;
+}
+#item2 {
+    position: absolute;
+    left: 2vh;
+    top: 38vh;
+    border-top: 10px solid hsl(180, 62%, 55%);
+}
+#item3 {
+    position: absolute;
+    top: 21vh;
+    border-top: 10px solid hsl(0, 78%, 62%);
+}
+#item4 {
+    position: absolute;
+    bottom: 2vh;
+    border-top: 10px solid hsl(34, 97%, 64%);
+}
+#item5 {
+    position: absolute;
+    right: 2vh;
+    top: 38vh;
+    border-top: 10px solid hsl(212, 86%, 64%);
+}
+#supervisor{
+    width: 6vh;
+    position: absolute;
+    right: 1vh;
+    bottom: 2vh;
+}
+#team-builder {
+    width: 6vh;
+    position: absolute;
+    right: 1vh;
+    bottom: 2vh;
+}
+#karma {
+    width: 6vh;
+    position: absolute;
+    right: 1vh;
+    bottom: 2vh;
+}
+#calculator {
+    width: 6vh;
+    position: absolute;
+    right: 1vh;
+    bottom: 2vh;
+}
+@media only screen and (max-width: 675px)  {
+    p {
+        font-size: 1.3vh;
+    }
+    h1 {
+        font-size: 2vh;
+    }
+    h3 {
+        font-size: 1.6vh;
+    }
+    #supervisor {
+        width: 4vh;
+    }
+    #team-builder {
+        width: 4vh;
+    }
+    #karma {
+        width: 4vh;
+    }
+    #calculator {
+        width: 4vh;
+    }
+}
+@media only screen and (max-width: 600px) {
+    #item2 {
+        left: 1vh;
+        top: 38vh;
+    }
+    #item5 {
+        right: 1vh;
+        top: 38vh;
+    }
+    
+}
+@media only screen and (max-width: 450px) {
+    main {
+        min-height: 170vh;
+    }
+    .main-container {
+        height: 90%;
+        width: 90%;
+    }
+    h1 {
+        font-size: 3vh;
+    }
+    h3 {
+        font-size: 2vh;
+    }
+    p {
+        font-size: 1.5vh;
+    }
+    #item1 {
+        width: 100%;
+        height: 28vh;
+    }
+    #item2 {
+        left: 0;
+        width: 100%;
+        height: 28vh;
+        top: 30vh;
+    }
+    #item3 {
+        width: 100%;
+        height: 28vh;
+        top: 60vh;
+    }
+    #item4 {
+        width: 100%;
+        height: 28vh;
+        top:90vh;
+    }
+    #item5 {
+        width: 100%;
+        height: 28vh;
+        top:120vh;
+        right: 0;
+    }
+    .flex-item {
+        box-shadow: 0px 5px 10px rgba(0, 85, 197, 0.2);
+    }
+    
+}
+@media only screen and (min-height:1024px) {
+    #item2 {
+        left: -1vh;
+        top: 38vh;
+    }
+    #item5 {
+        right: -1vh;
+        top: 38vh;
+    }
+    #item1{
+        width:55% ;
+    }
+    p {
+        font-size: 1.2vh;
+    }
+    h1 {
+        font-size: 2.2vh;
+    }
+}
