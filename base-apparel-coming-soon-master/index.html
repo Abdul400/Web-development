@@ -7,27 +7,32 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Base Apparel coming soon page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-
-  We're coming soon
-
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
-
-  Email Address
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+  <main>
+    <div class="container">
+      <div class="left">
+        <div class="contents">
+          <img id="logo" src="/images/logo.svg" alt="base Apparel logo">
+          <h1 id="header1">We're</h1>
+          <h1 id="header2">coming soon</h1>
+          
+          <p id="par">
+          Hello fellow shoppers! We're currently building our new fashion store. 
+          Add your email below to stay up-to-date with announcements and our launch deals.
+          </p>
+          <div class="input-bottom">
+          <input id="input" type="text" placeholder=" Email Address">
+            <button id="button" type="button"><img src="/images/icon-arrow.svg" alt="arrow icon"></button>
+            <img class="img" id="error" alt="icon to show you have entered wrong email format">
+            <p class="warning" id="warning"></p>
+        </div>
+        </div>
+      </div>
+      <div class="right"></div>
+    </div>
+</main>
+  <script src="/scripts/script.js"></script>
 </body>
 </html>
