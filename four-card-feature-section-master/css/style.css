@@ -125,6 +125,53 @@ p {
     right: 1vh;
     bottom: 2vh;
 }
+@media only screen and (max-width: 950px) {
+    .main-container {
+        width: 85%;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .main-container {
+        width: 90%;
+    }
+    #supervisor {
+        width: 3vh;
+    }
+    #teambuilder {
+        width: 3vh;
+    }
+    #karma {
+        width: 3vh;
+    }
+    #calculator {
+        width: 3vh;
+    }
+}
+@media only screen and (max-width: 750px){
+    .main-container {
+        width: 90%;
+    }
+    #supervisor {
+        width: 2.5vh;
+    }
+    #team-builder {
+        width: 2.5vh;
+    }
+    #karma {
+        width: 2.5vh;
+    }
+    #calculator {
+        width: 2.5vh;
+    }
+    #item2 {
+        left: 1vh;
+        top: 38vh;
+    }
+    #item5 {
+        right: 1vh;
+        top: 38vh;
+    }
+}
 @media only screen and (max-width: 675px)  {
     p {
         font-size: 1.3vh;
@@ -136,19 +183,22 @@ p {
         font-size: 1.6vh;
     }
     #supervisor {
-        width: 4vh;
+        width: 3vh;
     }
     #team-builder {
-        width: 4vh;
+        width: 3vh;
     }
     #karma {
-        width: 4vh;
+        width: 3vh;
     }
     #calculator {
-        width: 4vh;
+        width: 3vh;
     }
 }
 @media only screen and (max-width: 600px) {
+    .main-container {
+        width: 98%;
+    }
     #item2 {
         left: 1vh;
         top: 38vh;
@@ -217,7 +267,7 @@ p {
         top: 38vh;
     }
     #item1{
-        width:55% ;
+        width:55d% ;
     }
     p {
         font-size: 1.2vh;
