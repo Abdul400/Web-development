@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+body,
+html,
+main {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(217, 54%, 11%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  color: hsl(0, 0%, 100%);
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+p {
+  color: hsl(215, 51%, 70%);
+  font-family: 'Outfit', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+.container {
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 15px;
+  height: 30rem;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 45px 40px rgba(0, 0, 0, 0.5);
+}
+.top {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image {
+  height: 88%;
+  width: 88%;
+  border-radius: 10px;
+  background-image: url(/images/image-equilibrium.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+.image:hover {
+  background: url(/images/icon-view.svg),
+    linear-gradient(rgba(0, 255, 247, 0.5), rgba(0, 255, 247, 0.5)),
+    url(/images/image-equilibrium.jpg);
+  background-position: center, center, center;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 15%, cover, cover;
+}
+.bottom {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contents {
+  height: 88%;
+  width: 88%;
+}
+#equilibrium {
+  margin-bottom: 0.8rem;
+  cursor: pointer;
+}
+#equilibrium:hover {
+  color: hsl(178, 100%, 50%);
+}
+#par {
+  margin-bottom: 1rem;
+}
+.center {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1.5rem;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+  padding-bottom: 20px;
+}
+#eth {
+  margin-right: 5px;
+  height: 15px;
+  position: relative;
+  top: 2px;
+}
+#etherium {
+  color: hsl(178, 100%, 50%);
+  margin-right: 5rem;
+}
+#time {
+  margin-right: 5px;
+  position: relative;
+  right: -1.6em;
+  top: 2px;
+  width: 15px;
+  height: 15px;
+}
+#days {
+  position: relative;
+  right: -1.8em;
+}
+.creator {
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#avatar {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+#name {
+  color: white;
+  margin-left: 5px;
+  cursor: pointer;
+}
+#name:hover {
+  color: hsl(178, 100%, 50%);
+}
+#avatar:hover {
+  border: 2px solid white;
+  border-radius: 100%;
+}
+@media only screen and (max-width: 350px) {
+  .container {
+    height: 30rem;
+    width: 19rem;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .container {
+    height: 30rem;
+    width: 17rem;
+  }
+  p {
+    font-size: 13px;
+  }
+  #time {
+    position: relative;
+    right: -1em;
+  }
+  #days {
+    position: relative;
+    right: -1.2em;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .container {
+    height: 30rem;
+    width: 15rem;
+  }
+  p {
+    font-size: 12px;
+  }
+  #time {
+    position: relative;
+    right: -0.1em;
+  }
+  #days {
+    position: relative;
+    right: -0.3em;
+  }
+  #etherium {
+    margin-right: 4rem;
+  }
+}
+@media only screen and (min-height: 1023px) {
+  .container {
+    height: 45rem;
+    width: 28rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 20px;
+  }
+  #time {
+    position: relative;
+    right: -0.1em;
+  }
+  #days {
+    position: relative;
+    right: -0.3em;
+  }
+  #etherium {
+    margin-right: 9rem;
+  }
+  #equilibrium {
+    margin-bottom: 1.2rem;
+  }
+  .center {
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
+  }
+  #avatar {
+    width: 3em;
+    height: 3em;
+  }
+}
