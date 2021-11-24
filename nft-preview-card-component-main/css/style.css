@@ -36,7 +36,8 @@ p {
   width: 20rem;
   display: flex;
   flex-direction: column;
-  box-shadow: 0px 45px 40px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 20px 0 20px rgba(0, 0, 0, 0.076),
+    0px 30px 0 40px rgba(0, 0, 0, 0.031);
 }
 .top {
   height: 50%;
