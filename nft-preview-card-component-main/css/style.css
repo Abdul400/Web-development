@@ -101,6 +101,7 @@ p {
 #etherium {
   color: hsl(178, 100%, 50%);
   margin-right: 5rem;
+  animation: blink 2s linear infinite;
 }
 #time {
   margin-right: 5px;
@@ -137,6 +138,23 @@ p {
 #avatar:hover {
   border: 2px solid white;
   border-radius: 100%;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media only screen and (max-width: 350px) {
   .container {
