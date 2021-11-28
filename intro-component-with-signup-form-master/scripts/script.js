@@ -16,7 +16,6 @@ const myInpt1 = document.getElementById('input-field1'),
   allWarnings = document.getElementsByClassName('warning'),
   myBtn = document.getElementById('btn');
 
-console.log(allInputs);
 //writing the logic for the input fields
 var allErrorsArr = Array.from(allErrors);
 var allInputsArr = Array.from(allInputs);
@@ -40,7 +39,6 @@ window.onload = () => {
   allWarningsArr.forEach((warning) => {
     warning.classList.add('invisible');
   });
-  check();
 };
 
 function field1() {
@@ -102,6 +100,7 @@ myBtn.addEventListener('click', (event) => {
       field1();
     } else {
       field1Remove();
+      return 'passed';
     }
   }
   first();
@@ -111,6 +110,7 @@ myBtn.addEventListener('click', (event) => {
       field2();
     } else {
       field2Remove();
+      return 'passed';
     }
   }
   second();
@@ -122,6 +122,7 @@ myBtn.addEventListener('click', (event) => {
       field3();
     } else {
       field3Remove();
+      return 'passed';
     }
   }
   third();
@@ -131,7 +132,17 @@ myBtn.addEventListener('click', (event) => {
       field4();
     } else {
       field4Remove();
+      return 'passed';
     }
   }
   fourth();
+
+  if (
+    first() === 'passed' &&
+    second() === 'passed' &&
+    third() === 'passed' &&
+    fourth() === 'passed'
+  ) {
+    location.href = 'pages/page2.html';
+  }
 });
