@@ -24,10 +24,9 @@ main {
   min-height: 100vh;
   width: 100%;
   display: flex;
-  background: linear-gradient(rgba(153, 78, 78, 0.49), rgba(153, 78, 78, 0.49)),
-    url(/images/bg-intro-desktop.png);
+  background: url(/images/bg-intro-desktop.png), #ff7978;
   background-size: cover, cover;
-  background-repeat: repeat, no-repeat;
+  background-repeat: no-repeat, no-repeat;
 }
 
 * {
